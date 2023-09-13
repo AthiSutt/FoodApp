@@ -1,0 +1,111 @@
+body {
+  background-color:black;
+  margin: 0;
+  padding: 0;
+}
+
+.loginbody {
+  background-size: 100% 100%;
+  background-color:crimson;
+  background-repeat: no-repeat;
+  color: white;
+  font: 14px Helvetica, sans-serif;
+}
+
+.login-title {
+  font: bold 20px Helvetica, sans-serif;
+  display: block;
+  text-align: center;
+  opacity: 0; /* Start with zero opacity */
+  animation: fadeIn 1s ease-in-out 0.5s forwards; /* Fade-in animation */
+  margin-top: 20px; /* Adjust as needed */
+}
+
+label {
+  font: bold 20px Helvetica, sans-serif;
+  display: block;
+  float: left;
+  padding: 5px 10px 0 0;
+}
+
+/* .form-group {
+  overflow: hidden;
+  margin: 0 0 5px 0;
+} */
+
+.bigbutton {
+  border-radius: 4px;
+  background-color:darkgoldenrod;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Add modal styles here */
+.modal {
+  visibility: visible;
+  position: fixed;
+  z-index: 2;
+  opacity: 30px;
+  left: 50;
+  top: 50;
+  width: 50%;
+  height: 50%;
+  background-color: #c51818b3;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  display: block;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}

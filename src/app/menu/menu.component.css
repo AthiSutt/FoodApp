@@ -1,0 +1,178 @@
+.body {
+  height: -webkit-fill-available;
+  background:darkgreen;
+  color: white;
+  font: 14px Helvetica, sans-serif;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color:burlywood;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px hwb(204 6% 26% / 0.888);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+.card p {
+  margin: 0;
+  color:darkred;
+}
+
+.card-img-top {
+  width: 40%;
+  padding: 0 15px;
+  float: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.table-responsive.panel {
+  margin-top: 20px;
+}
+
+table {
+  margin: auto;
+}
+
+.align-contents {
+  background-color: #393939;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+label {
+  font: bold 20px Helvetica, sans-serif;
+  display: block;
+  float: left;
+  text-align: right;
+  padding: 5px 10px 0 0;
+  width: 140px;
+
+}
+input{
+  width: -webkit-fill-available;
+  padding: inherit;
+
+}
+form div {
+  overflow: hidden;
+  margin: 0 0 5px 0;
+}
+
+.dec {
+  background-position: 0 -29px;
+}
+
+.buttons {
+  padding: 20px 0 0 140px;
+}
+
+td {
+  color: #cf610e;
+}
+
+font {
+  color: #FFFFFF;
+  font-size: 4vw;
+}
+
+.welcome {
+  color: white;
+}
+
+/* Keyframe Animation for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bigbutton {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+p{
+  color: black;
+}
+
+.input-align{
+  text-align: center;
+  background-color:bisque;
+  color:#f4511e
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 100%; /* Adjust as needed */
+  }
+}
+@media (max-width: 576px) {
+  /* Additional responsive styles */
+}
+
+

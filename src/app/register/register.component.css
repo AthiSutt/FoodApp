@@ -1,0 +1,140 @@
+.body {
+  height: -webkit-fill-available;
+  background:#f44336;
+  color: white;
+  font: 14px Helvetica, sans-serif;
+}
+
+label {
+  font: bold 20px Helvetica, sans-serif;
+  display: block;
+  text-align: center;
+  padding: 5px 10px 0 0;
+  width: 140px;
+}
+
+form div {
+  overflow: hidden;
+  margin: 0 0 5px 0;
+}
+
+table{
+  border-spacing: 0px;
+}
+
+.bigbutton {
+  border-radius: 4px;
+  background-color:darkgreen;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+select {
+  width: 203px;
+}
+
+option {
+  width: 203px;
+}
+
+/* Styles for CAPTCHA */
+.captcha-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#CaptchaDiv {
+  font-size: 20px;
+  font-weight: bold;
+  background-color:deeppink; /* Blue background color */
+  color: white; /* White text color */
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#CaptchaInput {
+  width: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(181, 28, 28);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Style for the submit button */
+#captchaSubmit {
+  background-color: #4287f5; /* Blue background color */
+  color: white; /* White text color */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#captchaSubmit:hover {
+  background-color: #2d60e2; /* Darker blue on hover */
+}
+
+/* Error message style */
+.error-message {
+  color: #ff0000; /* Red text color for error messages */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column; /* Center content vertically */
+  justify-content: center; /* Center content horizontally and vertically */
+  align-items: center; /* Center content horizontally */
+  height: 40vh; /* Adjust the height as needed */
+}

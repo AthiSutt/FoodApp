@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amount to be paid </title>
+
+</head>
+<body>
+    <div class="cart-items animated">
+        <h2>Amount to be paid</h2>
+        <p>Total: Rs. {{ total }}</p>
+    </div>
+
+    <table align="center">
+        <td>
+            <button class="bigbutton animated" (click)="payNow()"><span>Buy</span></button>
+            <button class="bigbutton animated" routerLink="/menu"><span>Back To Menu</span></button>
+        </td>
+    </table>
+</body>
+</html>
+
+
+

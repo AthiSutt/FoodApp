@@ -1,0 +1,133 @@
+.body {
+  background:#cf610e;
+  color: white;
+  font: 14px Helvetica, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  font-size: 36px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+.card {
+  background-color:blanchedalmond;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(168, 17, 135, 0.492);
+}
+
+.card p {
+  margin: 0;
+}
+
+.card-img-top {
+  width: 20%;
+  padding: 0 15px;
+  float: left;
+}
+
+.table-responsive.panel {
+  margin-top: 20px;
+}
+
+
+p{
+  margin-left: 23%;
+}
+
+table{
+  margin: auto;
+}
+
+img{
+  width: 20%;
+  align-self: center;
+}
+
+.align-contents{
+  background-color:cadetblue;
+  width: 100%;
+  padding: 20px;
+}
+
+
+td{
+
+  color: #cf610e;
+}
+
+font{
+  color: #FFFFFF;
+  font-size: 4vw;
+}
+.welcome{
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+label {
+  font: bold 20px Helvetica, sans-serif;
+  display: block;
+  float: left;
+  text-align: right;
+  padding: 5px 10px 0 0;
+  width: 140px;
+
+}
+
+form div {
+  overflow: hidden;
+  margin: 0 0 5px 0;
+}
+
+
+.bigbutton {
+  border-radius: 4px;
+  background-color:crimson;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}

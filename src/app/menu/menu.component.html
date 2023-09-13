@@ -1,0 +1,91 @@
+<div class="body">
+  <br><br>
+  <h1 align="center">Menu</h1>
+    <br><br>
+
+    <form name="form" #f="ngForm" (ngSubmit)="f.form.valid && getTotal()" novalidate class="feedback-form">
+      <div class="container-fluid" style="margin: 0 auto; width: 100%;">
+        <div class="row">
+          <div class="col-md-6" *ngFor="let m of model | paginate :{itemsPerPage:itemsPerPage,currentPage:currentPage}; let index=index">
+            <div class="card mb-4">
+              <img class="card-img-top zoom" src="{{m.url}}" alt="{{m.item}}"  style="height: 190px">
+              <div class="card-block">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black">{{m.item}}</h5>
+                  <p class="card-text">Price : Rs.{{m.price}}</p>
+                  <p> Quantity Available : {{m.quantity}}</p>
+                </div>
+              </div>
+            </div>
+      <!--<input class="input-group-text input-align" type="number" name="name+{{index}}" min="0" max="{{model[index].quantity}}" value="{{values[index].quantity}}" [(ngModel)]="values[index].quantity">-->
+          <!--<<input class="input-group-text input-align" type="number" name="name+{{index}}" min="0" max="{{model[index].quantity}}" [ngModel]="values[index].quantity" (ngModelChange)="values[index].quantity = $event">>-->
+          <input class="input-group-text input-align" type="number" name="name+{{index}}" min="0" max="{{model[index].quantity}}" value="{{values[index].quantity}}" [(ngModel)]="values[index].quantity">
+
+
+        </div>
+        </div>
+      </div>
+
+
+      <br><br>
+
+
+      <div class="total" style="text-align: center; font-size: large">
+        Cart Total : {{total}}
+      </div>
+
+      <table align="center">
+        <tr>
+
+            <td>
+              <button class ="bigbutton"><span>TotalAmount</span></button>
+            </td>
+
+          <td>
+            <button routerLink="/cart-items" class="bigbutton"><span>Go To Cart</span></button>
+          </td>
+
+          <td>
+            <button routerLink="/home" type="button" class="bigbutton" (click)="clearLocal()"><span>Log Out</span></button>
+          </td>
+        </tr>
+      </table>
+      </form>
+
+
+<!-- Script for pagination -->
+
+      <div class="text-right">
+        <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+      <!-- <div class="container" align="center"> -->
+
+        <!-- Pagination links -->
+        <!-- <ul class="pagination">
+          <li class="page-item" [class.disabled]="currentPage === 1">
+            <a class="page-link" (click)="changePage(currentPage - 1)" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item" *ngFor="let page of getPages()" [class.active]="page === currentPage">
+            <a class="page-link" (click)="changePage(page)" href="#">{{ page }}</a>
+          </li>
+          <li class="page-item" [class.disabled]="currentPage === getTotalPages()">
+            <a class="page-link" (click)="changePage(currentPage + 1)" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </div> -->
+

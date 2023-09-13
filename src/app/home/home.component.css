@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #393939;
+  color: rgb(221, 5, 5);
+  margin: 0;
+  padding: 0;
+  background-image: url('../../assets/homeimgae.png');
+  background-repeat: repeat-y;
+  animation: scrollBackground 7s linear infinite;
+}
+@keyframes scrollBackground {
+  from {
+      background-position: 0 0; /* Start from the top */
+  }
+  to {
+      background-position: 0 100%; /* Scroll to the bottom */
+  }
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+  opacity: 0; /* Start with zero opacity */
+  animation: fadeIn 1s ease-in-out 0.5s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.body {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.bigbutton {
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px 40px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bigbutton:hover {
+  background-color: #ff6d40;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}

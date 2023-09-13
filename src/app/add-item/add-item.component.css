@@ -1,0 +1,192 @@
+input{
+  text-align: center;
+}
+
+
+.body {
+  background: #393939;
+  color: white;
+  font: 14px Helvetica, sans-serif;
+}
+
+p{
+  margin-left: 23%;
+}
+
+table{
+  margin: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color:burlywood;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.table th,
+.table td {
+  padding: 1px 12px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f4511e;
+  color: #fff;
+}
+
+.table tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.table tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Style the input fields within the table */
+.table input[type="text"],
+.table input[type="number"],
+.table input[type="file"] {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the buttons within the table */
+.table button {
+  background-color:darkblue;
+  color:darkgoldenrod;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.table button:hover {
+  background-color:fuchsia;
+}
+
+/* Add styles to alert boxes */
+.alert-box {
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.alert-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.alert-success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Add animation to table rows */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+img{
+  width: 20%;
+  align-self: center;
+}
+
+.align-contents{
+  background-color:chocolate;
+  width: 100%;
+}
+
+
+td{
+  border-top: 0px;
+  color: #FFFFFF;
+}
+font{
+  color: #FFFFFF;
+  font-size: 4vw;
+}
+.welcome{
+  color: white;
+}
+
+label {
+  font: bold 20px Helvetica, sans-serif;
+  display: block;
+  float: left;
+  text-align: right;
+  padding: 5px 10px 0 0;
+  width: 140px;
+}
+
+
+.align-submit{
+  display: block;
+}
+
+.bigbutton {
+  border-radius: 4px;
+  background-color:red;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 25%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton:hover {
+  background-color: #e44d26; /* Change the background color on hover */
+  transform: scale(1.05); /* Scale up the button slightly */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.card {
+  opacity: 0; /* Start with zero opacity */
+  animation: fadeIn 1s ease-in-out 0.5s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
